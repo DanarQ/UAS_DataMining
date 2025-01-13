@@ -31,11 +31,22 @@ st.markdown("""
         .css-1aumxhk {
             padding-top: 2rem;
         }
+            /* Responsive header styling */
+        @media (max-width: 768px) {
+            .responsive-title {
+                font-size: 24px !important;
+            }
+        }
+        @media (min-width: 769px) {
+            .responsive-title {
+                font-size: 36px !important;
+            }
+        }
     </style>
 """, unsafe_allow_html=True)
 
 # Title with styling
-st.markdown("<h1 style='text-align: center; color: #6A5ACD;'>🌟 Self-Organizing Map (SOM) Clustering 🌟</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='responsive-title' style='text-align: center; color: #6A5ACD;'>🌟 Self-Organizing Map (SOM) Clustering 🌟</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: #6A5ACD;'>Danar Qusyairi</p>", unsafe_allow_html=True)
 
 # Explanation of SOM in Bahasa Indonesia
